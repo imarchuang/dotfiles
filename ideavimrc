@@ -1,0 +1,27 @@
+try
+  source ~/.vimrc
+catch
+  " No such file? No problem; just ignore it.
+	colorscheme onedark
+	syntax on
+	set number
+	set relativenumber
+	highlight Normal ctermbg=None
+	highlight LineNr ctermfg=DarkGrey
+
+	set encoding=utf-8
+	set tw=79
+	set history=700
+
+	
+	" Mouse and backspace
+	set mouse=a " on OSX press ALT and click
+	" set bs=2    " make backspace behave like normal again
+	set backspace=indent,eol,start
+
+
+	" disable stupid backup and swap files - they trigger too many events
+	" for file system watchers
+	set nobackup
+	set nowritebackup
+endtry
